@@ -1,0 +1,17 @@
+/*자손 선택자*/
+/* div p{
+    color : red;
+} */
+/* 자식 선택자*/
+/* div > p{
+    color : red;
+} */
+
+/*인접동위선택자*/
+p + ul{
+    color: blue;
+}
+/*일반동위선택자*/
+/* p ~ ul{
+    color: blue;
+} */

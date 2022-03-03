@@ -1,0 +1,29 @@
+.container {
+    border: 5px solid green;
+    height: 500px;
+    display: flex;
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /*stretch: 자식요소에 높이 값이 없다면 부모요소의 
+      높이 값에 맞게 자동으로 100%를 채우는 속성값.*/
+    align-items: stretch;
+}
+.container div{
+    width: 150px;
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    background-color: red;
+}
+
+
+
+.item1{
+    /* height: 100px; */
+    height: 100px;
+
+}
+.item2{
+    height: 150px;
+}

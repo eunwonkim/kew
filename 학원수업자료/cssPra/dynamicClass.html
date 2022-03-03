@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적의사 클래스</title>
+    <style>
+        a:link{ color:crimson;}
+        a:visited{color: darkgoldenrod;}
+        a:hover{color: aliceblue; background-color:
+                turquoise; font-weight: 800;}
+        a:active{background-color: blueviolet;}
+
+        input[type=text]:focus, input[type=password]:focus{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+<!-- 동적의사 클래스의 종류
+:link - 선택자가 방문하지 않은 링크일떄
+:visited - 선택자가 방문한 링크일때
+:active - 선택자가 클릭된 상태일때
+:hover - 선택자 위에 마우스가 올라와 있을때
+:focus - 선택자 위에 포커스(?)가 들어와 있을떄 -->
+<a href="#" target="_blank">나는 링크입니다.</a><br>
+<input type="text" value="아이디를 입력하세요"><br>
+<input type="password" value="qwhewqkljenqwj">
+
+
+</body>
+</html>

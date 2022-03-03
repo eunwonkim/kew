@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--가로폭을 디바이스 가로폭에 맞추고 초기화면 배율을 100%로-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Cssunit.css">
+</head>
+<body>
+<!-- 크기 단위.
+css의 대표적 크기단위
+px, %, em
+대부분 브라우저의 폰트 사이즈 기본값
+16px, 1em, 100%(속성값이 0인경우(안쓴경우) 단위를 생략할수 있음.)
+
+px : 픽셀(화소) 
+ - 1px은 화소 1개의 크기
+ - 예를들어 모니터의 해상도가 1024*768이라면 가로 1024개 세로 768개의
+    픽셀을 가진다 라는 의미
+ - 200만화소 -> 가로 * 세로 값  -> 1600*1200 = 2000000 
+ - 픽셀은 적색, 녹색, 청색 요소들을 가지고 있고 저 요소의 값들을 rgb라 한다.
+ - 픽셀은 해상도에따라 크기가 상대적이다
+ - 디바이스 별로 픽셀의 크기는 제각각이기 때문에 픽셀 기준 단위는 사실 명확하지 않음.
+ - 대부분의 브라우저는 1px 1/96 인치 절대단위로 인식
+
+ % 
+  - 백분률 단위의 상대 단위 요소에 지정된 사이즈에 상대적인 사이즈를 설정
+    (상속된 사이즈나 디폴트 사이즈) 
+  - em, viewport등을 최근 많이 사용하기 때문에 %의 사용비중이
+    예전에비해 많이 줄었음.
+
+em 
+배수단위 ex) 1.2다 -> 현재 크기의 1.2배 -> 2(2배)
+폰트 사이즈 설정에 많이 사용, 컨텐츠를 포함하는 컨테이너의 크기설정에
+사용되기도 한다.
+중첩된 자식요소에 em을 지정하면 모든 자식요소의 사이즈에 영향을 미치기 때문에
+주의해야함
+
+rem 
+em과 똑같은 기능이지만 무조건 최상위요소(html)의 사이즈를 기준으로
+삼는다.
+사용자가 브라우저의 기본 폰트 크기를 변경하더라도 이에따라
+웹사이트의 레이아웃을 적절히 조정할수 있는 장점이 있음.
+따라서 폰트 사이즈 뿐만 아니라 컨텐츠 크기에따라 가변적으로 대응하여야
+하는 요소등에 매우 적합.
+
+viewport
+ - 웹페이지의 가시영역.
+ - viewport의 단위는 상대적인 단위로 
+ - 장치별 viewport를 기준으로 움직인다.
+반응형웹 : 어떠한 장치로 웹사이트를 접속하는지 모름 -> 
+           (레이아웃이 사이트 방문자의 해상도를 고려.)
+          과거 웹사이트들은 축소된다면 글자크기가 너무 작아지거나
+          스크롤없이 데이터를 볼수 없었음(스마트폰기준)
+  - 화면 해상도에따라 가로폭, 배치를 변경해 가독성을 높이는것.
+    (하나의 웹사이트를 구축해 디바이스별 화면 해상도를 최적화 해주는것)
+
+viewport 단위
+vw : viewport 너비의 1/100
+  - 1vw : viewport 전체 너비가 1000px이라면 1퍼센트인 10px
+vh : viewport 높이의 1/100
+  - 1vh : viewport 전체 높이가 600px이라면 1퍼센트인 6px
+vmin : viewport 너비 또는 높의 중 작은쪽의 1/100
+vmax : 너비 또는 높이중 큰쪽의 1/100
+
+viewport와 %의 차이는 스크롤바를 고려하느냐 하지 않느냐다
+viewport는 스크롤바까지 넓이를 고려해 크기를 부여.
+
+색상표현
+1. 키워드 
+   - 말그대로 색상명 그 자체를 입력.
+   - 간단하지만 표현할수 있는 색상의 수는 제한된다.
+
+2. HEX 코드 단위
+3. rgb(red, green, blue)
+4. rgba(red, green, blue, alpha/투명도)
+5. HSL(색상, 채도, 명도)
+6. HSLA(색상, 채도, 명도, 투명도)
+
+-->
+
+
+<!-- <div>
+    Font size: 14px * 120% 
+</div> -->
+<!-- <div class="box1">fontsize test 1
+    <div class="box2">fontsize test 2
+        <div class="box3">fontsize test 3</div>
+    </div> box2 class div end
+</div> box1 class div end
+ -->
+<div class="item item1">item1</div>
+<div class="item item2">item2</div>
+
+</body>
+</html>

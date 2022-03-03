@@ -1,0 +1,23 @@
+.container {
+    border: 5px solid green;
+    height: 500px;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: flex-end;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+
+}
+.container div{
+    width: 150px;
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    background-color: red;
+}
+
+.item{
+    height: 100px;
+}

@@ -1,0 +1,26 @@
+#container{
+    width:400px;
+    height: 400px;
+    background-color: salmon;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+#item{
+    width: 50px;
+    height: 50px;
+    background-color: darkblue;
+    position: absolute;
+    left:50%;
+    margin-left: -25px;
+    top:50%;
+    margin-top: -25px;
+    /*마진을 이용한 수직정렬방법
+    부모 요소의 높이 - 자식요소의 높이 / 2 
+    margin-top에 적용
+    */
+    /*position을 이용*/
+
+}

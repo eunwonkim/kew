@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조 의사 클래스</title>
+    <style>
+      /*  p:first-child {background-color: aqua;}
+        p:last-child {background-color: violet;}*/
+        /*짝수번째 요소만 선택*/
+        ol > li:nth-child(2n){background-color: aquamarine;}
+        /*홀수번째 요소만 선택*/
+        ol > li:nth-child(2n+1){background-color: red;}
+        /*3번째 요소만 선택*/
+        ol > li:nth-child(3){background: blue;}
+
+        /*뒤에서부터 시작해 홀수번째만 선택*/
+        ul > li:nth-last-child(2n+1){background-color: slateblue;}
+
+        p:first-of-type{background-color: brown;}
+        p:last-of-type{background-color: aquamarine;}
+        p:nth-of-type(2){background-color: violet;}
+        p:nth-last-of-type(2){background-color: orange;}
+    </style>
+</head>
+<body>
+<!-- 
+:first-child : 선택자에 해당하는 모든 요소중 첫번째 자식인 요소를 선택
+:last-child : 모든 요소중 마지막 자식인 요소를 선택 
+:nth-child(n) : 해당하는 요소중 앞에서 n번째 자식인 요소를 선택
+:nth-last-child(n) : 해당하는 요소중 뒤에서 n번째 자식인 요소를 선택
+:first-of-type : 셀렉터에 해당하는 부모요소의 자식요소중 첫번째 등장 요소 선택
+:last-of-type : 해당하는 요소의 부모요소의 자식요소중 마지막 등장 요소 선택
+:nth-of-type : 해당하는 요소의 부모요소의 자식요소중 n번째 등장 요소 선택
+:nth-last-of-type : 해당하는 요소의 부모요소의 자식요소중 뒤에서 n번째 등장 요소 선택
+-->
+
+<h1>헤더입니다.</h1>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<div>
+    <h1>헤더입니다2</h1>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+</div>
+
+
+
+<!-- <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ol>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul> -->
+
+<!-- <p>구조의사 클래스가 뭐임?</p>
+
+<h1>나도 모름 ㅋㅋ</h1>
+<p>일단 ㄱㄱ</p>
+<div>
+    <p>구조의사 클래스 적용1번</p>
+    <p>구조의사 클래스 적용2번</p>
+    <p>구조의사 클래스 적용3번</p>
+    <p>구조의사 클래스 적용4번</p>
+</div>
+
+<p>나는 제일 마지막 ㅋㅋ</p> -->
+
+
+
+</body>
+</html>

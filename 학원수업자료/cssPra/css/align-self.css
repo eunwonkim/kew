@@ -1,0 +1,28 @@
+.container{
+    border: 5px solid red;
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+}
+
+.container div{
+    width: 250px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    line-height: 200px;
+}
+.item1{
+    background-color: cornflowerblue;
+    height: 150px;
+    align-self: center;
+}
+.item2{
+    background-color: deeppink;
+    height: 250px;
+    align-self: center;
+}
+.item3{
+    background-color: green;
+    height: 200px;
+}

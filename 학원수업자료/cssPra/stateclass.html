@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled + span{
+            color:blue
+        }
+        input:disabled + span{
+            color:gray;
+            text-decoration: line-through;
+        }
+        input:checked + span{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+<!-- 상태의사클래스 : 입력한 양식의 상태에따라 각각의 스타일 별도 지정
+1. checked : 선택자가 체크상태일떄
+2. enabled : 사용가능한 상태일때
+3. disabled : 사용 불가능한 상태일때 -->
+
+<!--성별을 입력해주세요-->
+<input type="radio" name="gender" value="male"><span>male</span><br>
+<input type="radio" name="gender" value="female"><span>Female</span><br>
+<input type="radio" name="gender" value="Nothing" disabled><span>no</span><br>
+<!--갖고있는 전자기기-->
+<br>
+<input type="checkbox" name="tablet" value="tablet"><span>태블릿</span><br>
+<input type="checkbox" name="phone"  value="phone" checked><span>핸드폰</span><br>
+<input type="checkbox" name="watch"  value="watch"><span>시계</span><br>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixedAndOverflow</title>
+    <link rel="stylesheet" href="css/fixedOverflow.css">
+</head>
+<body>
+ <!-- 
+ fixed: 부모 요소와 관계없이 브라우저의 viewport를 기준으로 좌표 속성을 사용해
+ 위치를 고정시키면 스크롤이 되더라도 화면에서 사라지지 않고 항상 같은곳에
+ 위치한다. fixed를 선언하면 block요소의 넓이는 인라인처럼 컨텐츠에 맞게 
+ 변화되기 때문에 적절한 넓이를 설정해야한다.   
+
+ overflow : 자식요소가 부모 요소의 영역을 벗어났을때 처리방법을 정의
+    - visible : 기본값(영역을 벗어난 부분을 표시)
+    - hidden : 벗어난 부분을 잘라내어 보이지 않게.
+    - scroll : 영역을 벗어나지 않아도 스크롤표시.(대부분 auto와 동일 작동)
+    - auto : 영역을 벗어난 부분이 있을때만 스크롤 표시
+-->
+<!-- <div class="fixed content">fixed 테스트 요소</div> -->
+<!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1> -->
+
+<!-- <div id="visible">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+</div>
+<div id="hidden">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+</div> -->
+<div id="scroll">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+</div>
+<div id="auto">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita labore debitis ab tempora eligendi, aperiam blanditiis nam recusandae! Numquam, similique. Eligendi quo, hic corporis quidem consequatur amet harum commodi.</h1>
+</div>
+
+
+
+<!-- <div class="fixed footer">fixed 푸터</div> -->
+
+</body>
+</html>

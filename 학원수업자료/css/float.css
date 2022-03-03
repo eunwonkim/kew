@@ -1,0 +1,31 @@
+/* img{
+    float:right;
+    margin-right: 15px;
+} */
+
+.box{
+    color: aliceblue;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.a1{
+    background-color: brown;
+    float: left;
+}
+.a2{
+    background-color: blue;
+    float: left;
+}
+.a3{
+    background-color: chocolate;
+    float: right;
+}
+.a4{
+    background-color: cornflowerblue;
+    float: right;
+}

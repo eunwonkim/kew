@@ -1,0 +1,44 @@
+/* body{
+    font-size: 14px;
+    text-align: center;
+}
+div{
+    
+    /* font-size: 160%; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2em;
+    /* background-color: aqua; 
+}
+.box1 {background-color: chocolate;}
+.box2 {background-color: aqua;}
+.box3 {background-color: cornflowerblue;} */
+
+/* viewport 예제*/
+
+body{
+    margin: 0;
+}
+
+.item{
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    /* line-height: 100vh; */
+    font-size: 4rem;
+    color: aliceblue;
+}
+
+.item1{ 
+    background-color: cornflowerblue;
+}
+.item2{
+    background-color: crimson;
+}
+
+
+
+
+
+
+

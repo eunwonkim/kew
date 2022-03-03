@@ -1,0 +1,46 @@
+#dir{
+    /* direction: rtl; */
+   
+}
+#spacing{
+    /* letter-spacing: 5px; */
+    /* letter-spacing: -5px;*/
+       /* word-spacing: 50px; */
+       word-spacing: -5px; 
+}
+
+p{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-style: oblique; */
+    /* font-variant: small-caps; */
+    /* font-weight: 500; */
+    font-weight:bold;
+}
+
+
+#align{
+
+    /* align은 자주 사용되는 속성 
+        text-align: right; */
+    /* vertical-align은 테이블에서만 적용되는 속성
+    */    
+        vertical-align: bottom;
+
+}
+
+#line{
+    line-height: 1.7;
+}
+
+#shadow{
+    text-shadow: 2px 2px orange;
+}
+/* table, tr, td{
+    border: 1px solid black;
+    width: 80%;
+}
+td{
+    text-align: center;
+    vertical-align: bottom;
+    height: 150px;
+} */

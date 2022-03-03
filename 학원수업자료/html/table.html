@@ -1,0 +1,94 @@
+table.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;/*선 표현시 겹치는 부분을 한줄만 표현*/
+        }
+        tr{
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+<!-- 테이블 : 표를 만들때 사용하는 태그. 
+         과거에는 테이블 태그를 이용해서 레이아웃을 구성했으나
+         최근방식(모던웹 방식)에서는 div, 시멘틱 태그등을 사용하는 방식을
+         선호하여 최근에는 게시판의 게시글 목록에서 자주 사용되는편.
+table: 표를 감싸주는 태그
+tr : 표 내부의 행
+th : 행 내부의 제목 셀
+td : 행 내부의 일반 셀
+thead : 테이블 헤더를 표현하는 태그 / 의미전달이 강한태그(누구나 이영역이 head임을 알게)
+tbody : 테이블의 바디를 표현하는 태그 / 의미전달용(누구나 이영역이 body임을 알게.)
+colspan : 테이블의 열을 통합할때 사용하는 태그
+rowspan : 테이블의 행을 통합할때 사용하는 태그 -->
+<table style="width: 50%; border: 1px solid black">
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th rowspan="2">3</th>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td colspan="3">10</td>
+        
+    </tr>
+
+</table>
+<!-- thead와 tbody는 th처럼 속성을 설정하진 않지만
+개발자에게 영역을 쉽게 보여줌으로써 유지보수에 기여 -->
+<!-- <table>
+    <thead>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </thead>
+    <tbody>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tbody>
+
+
+</table> -->
+<br>
+<hr>
+<table style="width: 90%;">
+    <tr style="background-color: cornflowerblue;">
+        <th>포유류</th>
+        <th>양서류</th>
+        <th>파충류</th>
+    </tr>
+    <tr>
+        <td rowspan="2">고래</td>
+        <td colspan="2">개구리</td>
+        
+    </tr>
+    <tr>
+        <td>닭</td>
+        <td>도마뱀</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>

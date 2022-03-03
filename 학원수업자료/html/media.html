@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어</title>
+</head>
+<body>
+비디오 : html5에서 새롭게 추가된 태그.
+src : 동영상 파일의 경로
+preload : 재생전 동영상 파일을 모두 불러올것인지 결정
+autoplay : 동영상 파일을 자동 재생 할것인지 말것인지 결정.
+loop : 동영상 반복재생 유무
+controls : 동영상 재생도구 표시 유무
+width, height : 동영상 넓이와 높이 설정. 
+
+동영상 재생 지원여부.
+mp4의 경우 모든 브라우저에서 지원.
+webm의 경우 사파리는 지원 x
+ogv도 사파리는 지원 x
+
+<video width="500" height="300" controls>
+    <source src="test.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>

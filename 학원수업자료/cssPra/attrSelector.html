@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자</title>
+    <style>
+        /*속성명만을 선택해서 스타일을 지정
+        a[href]{ background-color: aqua;}
+        a[target="_blank"]{color:red;}*/
+        a[title~="first"]{color:blue}
+        a[title|="first"]{color:red}
+        a[title^="first"]{background-color: aqua;}
+    </style>
+</head>
+<body>
+<!-- 속성선택자 : 특정한 속성이나 속성값을 가지고 있는 HTML요소를 선택.
+[속성명]선택자
+[속성명="속성값"]선택자
+셀렉터[속성명="값"]
+셀렉터[속성명~="값"] : 지정된 속성값이 지정된값을 단어로 포함하는 요소를 선택
+셀렉터[속성명|="값"]
+셀렉터[속성명^="값"]
+셀렉터[속성명$="값"]
+셀렉터[속성명*="값"]
+주로 input 태그에서 많이 활용. -->
+
+<!-- <a href="#">gunchim.com</a>
+<a href="#" target="_blank">naver.com</a>
+<a href="#">gohome.com</a> -->
+
+<a href="" title="head first">head first</a>
+<a href="" title="head-first">head-first</a>
+<a href="" title="head second">head second</a>
+<a href="" title="head third">head third</a>
+
+</body>
+</html>

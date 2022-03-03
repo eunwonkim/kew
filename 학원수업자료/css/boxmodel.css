@@ -1,0 +1,23 @@
+div{
+    /* background-color: chartreuse;
+    width: 500px;
+    border: 5px solid crimson;
+    margin: 30px;
+    padding: 30px; */
+    background-color: aqua;
+    border: 3px solid red;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+#pad{    
+    /* 
+    top : 50 right:35 bottom :15 left :25(12, 3, 6, 9)
+    padding : 50px 35px 15px 25px;
+    top : 50 left right : 40 bottom : 30
+    padding : 50px 40px 30px;
+    top, bottom : 50 / left, right:40
+    padding: 50px 40px; 
+    */
+}

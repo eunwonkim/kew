@@ -1,0 +1,34 @@
+.container {
+    border: 5px solid green;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow:column wrap;
+}
+.container div{
+    width: 400px;
+    height: 150px;
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+}
+
+
+
+.item1{
+   background-color: violet;
+
+}
+.item2{
+   background-color: blueviolet
+}
+.item3{
+    background-color: palevioletred;
+}
+.item4{
+    background-color: royalblue;
+}

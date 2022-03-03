@@ -1,0 +1,55 @@
+.container{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: violet;
+    flex: 1;
+    padding:1em;
+}
+section{
+    border: 5px solid green;
+    display: flex;
+}
+section article{
+    padding: 15em 1em;
+    
+}
+
+.main{
+    background-color: gray;
+    order: 2;
+    flex: 4;
+}
+.left{
+    background-color: tomato;
+    order: 1;
+    flex: 1;
+}
+.right{
+    background-color: royalblue;
+    order: 3;
+    flex: 1;
+}
+footer{
+    background-color: palevioletred;
+    flex:1;
+    padding: 1em;
+}
+
+@media(max-width:768px){
+    .container{width: 100%;}
+    section{
+        flex-direction: column;
+    }
+    section article{
+        padding: 1em;
+    }
+
+    .main{
+        order: 1;
+    }
+}

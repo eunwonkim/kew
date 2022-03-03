@@ -1,0 +1,48 @@
+div{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    /* animation-name: move, changeColor; */
+    animation: test 4s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes test{
+    0% {background-color: blueviolet; left: 0px; top:0px;}
+    25% {background-color: yellow; left: 200px; top:0px;}
+    50% {background-color: slategray; left: 200px; top:200px;}
+    75% {background-color: brown; left: 0; top:200px;}
+    100% {background-color: blueviolet; left: 0px; top:0px;}
+}
+
+
+@keyframes move{
+    from{
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left:300px;
+        opacity: 0;
+    }
+    /* 0%{
+        left: 0;
+    }
+    50%{
+        left: 100px;
+    }
+    100%{
+        left:300px;
+    } */
+}
+
+/* @keyframes changeColor{
+    from{
+        background-color: blue;
+    }
+    to {
+        background-color: brown;
+    }
+
+} */

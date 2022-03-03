@@ -1,0 +1,28 @@
+*{
+    margin:0;
+}
+
+header{
+    background-color: aqua;
+    height: 100px;
+}
+
+nav{
+    background-color: royalblue;
+    height: 400px;
+    width: 25%;
+    float: left;
+}
+
+section{
+    background-color: palevioletred;
+    height: 400px;
+    width: 75%;
+    float: left;
+}
+
+footer{
+    background-color: deepskyblue;
+    height: 100px;
+    clear: both;
+}

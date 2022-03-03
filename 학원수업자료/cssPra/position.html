@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <link rel="stylesheet" href="css/position.css">
+</head>
+<body>
+    <!-- position : 요소의 위치를 정의하는 속성.
+    1. static(정적위치방식)
+    2. relative(상대위치방식)
+       - 요소의 원 위치를 기준으로 위치를 선정하는 방식
+    3. fixed(고정위치방식)
+    4. absolute(절대위치방식)
+       - 부모요소를 기준으로 위치를 선정하는 방식
+       - 부모요소가 없다면 body를 기준으로 위치를 선정.
+       - 따라서 부모 요소를 배치의 기준으로 삼으려면
+         부모요소에 relative를 정의하는편이 좋음.
+       - 다른 요소가 설령 먼저위치를 점유하고 있어도 덮어쓸수 있다.
+       - absolute의 선언시, block 레벨 요소의 width는 inline 요소와 같이
+         content에 맞게 변화되므로 적절한 width를 지정해야한다.  
+    5. z-index(요소 노출순서 변경하기)
+       - 요소가 설정된 위치방식에따라 겹칠수가 있음
+       - z-index 속성을 이용해서 겹쳐지는 요소들의 순서를 정할수 있음.
+       - 순서(스택) 양수, 음수 모두 설정 가능. 크기가 클수록 앞쪽에 위치
+       - 작을수록 뒤쪽에 위치하게 됨. -->
+<!-- <div class="parent">
+    <div class="child">position 컨트롤</div>
+</div>
+
+<div class="test">position 컨트롤</div> -->
+
+<div class="normal-box orange"></div>
+<div class="absolute-box red"></div>
+<div class="absolute-box green"></div>
+<div class="absolute-box blue"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size:50px;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::before{
+            content: "Oh MY GOD";
+            color: blue;
+        }
+        p::after{
+            content: "Oh MY GOD";
+            color: blue;
+        }
+        p::selection{
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 의사요소 : 해당 HTML 요소의 특정 부분만을 선택할때 사용.
+선택자::의사요소명{
+    속성명:속성값
+}
+:first-letter : 텍스트의 첫글자만 선택(블록에만)
+:first-line : 텍스트의 첫 라인만 선택(블록에만)
+:before : 특정 요소의 컨텐츠 바로 앞에 다른요소 삽입시 사용
+:after : 특정요소의 컨텐츠 바로 뒤에 다른요소 삽입시 사용
+:selection : 해당 요소에서 사용자가 선택한 부분만 선택시 사용. -->
+<h1>의사요소 컨트롤하기</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore a non ratione ad vero accusantium, iste doloremque aperiam praesentium dolor odio reprehenderit eius? Exercitationem dolor doloremque necessitatibus autem quia.
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit, corporis quod omnis possimus ipsa numquam nemo soluta nesciunt magnam reprehenderit placeat illo libero quos mollitia aut eius quidem voluptate. 
+</p>
+</body>
+</html>

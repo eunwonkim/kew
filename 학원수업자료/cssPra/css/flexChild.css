@@ -1,0 +1,27 @@
+.container{
+    border: 5px solid red;
+    display: flex;
+}
+
+.container div{
+    height: 200px;
+    width: 250px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    line-height: 200px;
+}
+.item1{
+    background-color: cornflowerblue;
+    flex: 1;/*flex는 비율로 배치*/
+    order: 1;
+}
+.item2{
+    background-color: deeppink;
+    flex:2;
+}
+.item3{
+    background-color: green;
+    flex:1;
+    order:2;
+}

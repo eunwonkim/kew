@@ -1,0 +1,24 @@
+.container{
+    border: 5px solid red;
+    display: flex;
+}
+
+.container div{
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+}
+.item1{
+    background-color: cornflowerblue;
+    margin-right: auto;
+}
+.item2{
+    background-color: deeppink;
+    
+}
+.item3{
+    background-color: green;
+    /* margin-left: auto; */
+}

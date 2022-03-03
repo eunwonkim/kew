@@ -1,0 +1,35 @@
+/* .inline-block{
+    border: 3px solid crimson;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.visible{
+    border: 3px solid red;
+}
+.hidden{
+    border: 3px solid blue;
+    visibility: hidden;
+}
+.none{
+    border: 3px solid black;
+    display: none;
+}
+.what{
+    border: 3px solid orange;
+} */
+
+
+h1, img{
+    width: 150px;
+    height:150px;
+    margin: 30px;
+    background-color: blueviolet;
+    opacity: 0.1;
+    transition: opacity 2s;
+}
+h1:hover, img:hover{
+    opacity: 1.0;
+}
